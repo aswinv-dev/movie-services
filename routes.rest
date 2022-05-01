@@ -1,0 +1,32 @@
+GET http://localhost:8000/ads
+
+###
+
+GET http://localhost:8000/ads/61f5bcbc099b1c52b52b91b9
+
+###
+
+POST http://localhost:8000/ads
+Content-Type: application/json 
+
+{
+    "name": "HackerEarth",
+    "image": "https://www.freeimages.com/photo/abstract-1-1528080",
+    "address": "www.hackerEarth.com"
+}
+
+
+###
+
+PATCH http://localhost:8000/ads/61f5bcbc099b1c52b52b91b9
+Content-Type: application/json 
+
+{
+    "imageLink": "countryZ"
+}
+
+
+
+###
+
+DELETE http://localhost:8000/ads/61f5bcbc099b1c52b52b91b9
